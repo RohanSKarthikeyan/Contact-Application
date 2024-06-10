@@ -1,18 +1,13 @@
 import React from 'react';
-import './SearchBar.css'; // Add styling for the search bar
+import './SearchBar.css'; 
 
 const SearchBar = ({ value, onChange }) => {
-  const handleChange = (e) => {
-    const { value } = e.target;
-    onChange(value); // Call the onChange function with the updated search term
-  };
-
   return (
     <input
       type="text"
-      placeholder="Search by name or ID..."
+      placeholder="Search contacts..."
       value={value}
-      onChange={handleChange} // Call handleChange function when the input value changes
+      onChange={onChange}
       className="search-bar"
     />
   );

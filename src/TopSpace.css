@@ -1,0 +1,23 @@
+.top-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .greeting {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .image-container {
+    flex-shrink: 0; 
+  }
+  
+  .image-container img {
+    width: 200px; 
+    height: auto;
+    border-radius: 8px;
+  }
+  

@@ -1,83 +1,81 @@
 .contact-home {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .search-bar {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    font-size: 16px;
-    outline: none;
-  }
-  
-  .search-bar::placeholder {
-    color: #999;
-  }
-  
-  .search-bar:focus {
-    border-bottom-color: #007bff;
-  }
-  
-  .dropdown {
-    border: 1px solid #ccc;
-    max-height: 200px;
-    overflow-y: auto;
-    background: #fff;
-    position: relative;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .dropdown-item {
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .dropdown-item:hover {
-    background: #f1f1f1;
-  }
-  
-  .contact-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .contact-card {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    display: flex;
-    align-items: center;
-  }
-  
-  .contact-icon {
-    width: 40px;
-    height: 40px;
-    background-color: #007bff;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
-  
-  .contact-details {
-    flex-grow: 1;
-  }
-  
-  .contact-name {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .contact-id {
-    color: #777;
-    margin-bottom: 5px;
-  }
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+.search-bar {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
 
+.search-bar::placeholder {
+  color: #999;
+}
+
+.search-bar:focus {
+  border-bottom-color: #007bff;
+}
+
+.dropdown {
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #f1f1f1;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact-details {
+  flex-grow: 1;
+}
+
+.contact-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-id {
+  color: #777;
+  margin-bottom: 5px;
+}
