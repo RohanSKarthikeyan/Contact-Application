@@ -17,21 +17,6 @@
   display: flex;
 }
 
-.contact-icon {
-  background-color: #f5f5f5;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-icon img {
-  max-width: 80%;
-  max-height: 80%;
-}
-
 .contact-details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

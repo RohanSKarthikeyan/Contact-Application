@@ -10,6 +10,7 @@
   animation-name: slideIn;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
+  z-index: 9999;
 }
 
 .modal {

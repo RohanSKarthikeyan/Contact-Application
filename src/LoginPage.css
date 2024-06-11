@@ -1,78 +1,90 @@
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-}
+    font-family: 'Roboto', sans-serif;
+  }
+  
 
-.form-box {
+  .form-box {
     background-color: #fff;
     border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
     border-radius: 10px;
     margin: 20px;
-    width: 40%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 450px;
     box-sizing: border-box;
-}
+  }
+  
 
-.form-box h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
+  .form-box h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
     color: #333;
     text-align: center;
-}
-
-.form-box label {
+  }
+  
+ 
+  .form-box label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-weight: bold;
     color: #555;
-}
+  }
+  
 
-.form-box input[type="text"],
-.form-box input[type="password"] {
-    width: calc(50% - 10px);
-    padding: 10px;
+  .form-box input[type="text"],
+  .form-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    display: inline-block;
-}
+    font-size: 16px;
+  }
+  
 
-.form-box .full-width {
+  .form-box .full-width {
     width: 100%;
     display: block;
-}
+  }
+  
 
-.form-box button {
+  .form-box button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.form-box button:hover {
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  .form-box button:hover {
     background-color: #0056b3;
-}
+  }
+  
 
-.form-box .link {
+  .form-box .link {
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
     color: #007bff;
     text-decoration: none;
-    font-size: 14px;
-}
+    font-size: 16px;
+  }
+  
 
-.form-box .link:hover {
+  .form-box .link:hover {
     text-decoration: underline;
-}
+  }
+  
