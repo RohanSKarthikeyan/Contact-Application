@@ -37,7 +37,7 @@ const FilterBar = ({ onFilter, onClearFiltersClick }) => {
           <select value={filterType} onChange={handleFilterTypeChange}>
             <option value="">Select Filter Type</option>
             <option value="EmployeeRole">Role</option>
-            <option value="EmployeeName">Name</option>
+            <option value="EmployeeDepartment">Department</option>
           </select>
         </div>
 
@@ -48,6 +48,17 @@ const FilterBar = ({ onFilter, onClearFiltersClick }) => {
               <option value="Senior Lead">Senior Lead</option>
               <option value="Project Intern">Project Intern</option>
               <option value="FTE">Full Time Employee</option>
+            </select>
+          </div>
+        )}
+
+        {filterType === 'EmployeeDepartment' && (
+          <div className="filter-dropdown">
+            <select value={filterValue} onChange={handleFilterValueChange}>
+              <option value="">Select Department</option>
+              <option value="Internal Tools">Internal Tools</option>
+              <option value="Embedded">Embedded</option>
+              <option value="DevOps">DevOps</option>
             </select>
           </div>
         )}

@@ -52,11 +52,11 @@ const ContactDetailsModal = ({ contact, onClose }) => {
         <div className="modal-content">
           <button className="close-button" onClick={onClose}>X</button>
           <h2 className="card-title">Contact Details</h2>
-          <p className="card-content"><strong>Employee ID:</strong> {contact.EmployeeID}</p>
           <p className="card-content"><strong>Employee Name:</strong> {contact.EmployeeName}</p>
-          <p className="card-content"><strong>Employee Role:</strong> {contact.EmployeeRole}</p>
-          <p className="card-content"><strong>Employee Mobile:</strong> {contact.EmployeeMobile}</p>
           <p className="card-content"><strong>Employee Address:</strong> {contact.EmployeeAddress}</p>
+          <p className="card-content"><strong>Employee Mobile:</strong> {contact.EmployeeMobile}</p>
+          <p className="card-content"><strong>Employee Age:</strong> {contact.EmployeeAge}</p>
+          <p className="card-content"><strong>Employee Role:</strong> {contact.EmployeeRole}</p>
           <button className="favorite-button" onClick={handleFavoriteToggle}>
             {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
           </button>
