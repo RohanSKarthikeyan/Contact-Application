@@ -1,0 +1,28 @@
+.personalized-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .favorite-contacts {
+    margin-bottom: 20px;
+  }
+  
+  .favorite-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details {
+    margin-left: 10px;
+  }
+  
+  .contact-name {
+    font-weight: bold;
+  }
+  
+  .contact-id {
+    color: #888;
+  }
+  

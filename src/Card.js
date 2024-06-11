@@ -2,14 +2,16 @@ import React from 'react';
 import './Card.css';
 import personImage from './images/person.png';
 
-const Card = ({ contact, onClick }) => {
+const Card = ({ contact, onClick, isSelected, isFavorited }) => {
   const handleClick = (event) => {
     event.preventDefault();
     onClick(contact);
   };
 
+  const cardClassName = `card ${isSelected ? 'selected' : ''} ${isFavorited ? 'favorited' : ''}`;
+
   return (
-    <div className="card" onClick={handleClick}>
+    <div className={cardClassName} onClick={handleClick}>
       <div className="card-content">
         <div className="contact-top">
           <p className="contact-name">{contact.EmployeeName}</p>

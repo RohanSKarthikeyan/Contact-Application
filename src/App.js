@@ -1,18 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './LoginPage';
-import ContactHome from './ContactHome';
 import Home from './Home';
+import PersonalizedPage from './PersonalizedPage';
+import ContactDetailsModal from './ContactDetailsModal';
+import './App.css';
 
-const App = () => {
+function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<LoginPage />} />
-      </Routes>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/personalized" element={<PersonalizedPage />} />
+          <Route path="/contact-details" element={<ContactDetailsModal />} />
+        </Routes>
+      </div>
     </Router>
   );
-};
+}
 
 export default App;

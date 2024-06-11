@@ -14,7 +14,6 @@ const ContactHome = () => {
   const [selectedContact, setSelectedContact] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [filter, setFilter] = useState({ filterType: '', filterValue: '', sortOrder: 'asc' });
-  const [clearFiltersFlag, setClearFiltersFlag] = useState(false);
 
   useEffect(() => {
     const fetchContacts = async () => {
@@ -47,23 +46,26 @@ const ContactHome = () => {
     };
 
     applyFilters();
-  }, [contacts, filter, clearFiltersFlag]);
+  }, [contacts, filter]);
 
   useEffect(() => {
     const searchContacts = () => {
       let updatedContacts = contacts;
-
+  
       if (searchTerm) {
+      
         updatedContacts = updatedContacts.filter(contact =>
-          contact.EmployeeName && contact.EmployeeName.toLowerCase().startsWith(searchTerm.toLowerCase())
+          (contact.EmployeeName && contact.EmployeeName.toLowerCase().startsWith(searchTerm.toLowerCase())) ||
+          (contact.EmployeeID && contact.EmployeeID.startsWith(searchTerm))
         );
       }
-
+  
       setFilteredContacts(updatedContacts);
     };
-
+  
     searchContacts();
-  }, [contacts, searchTerm, clearFiltersFlag]);
+  }, [contacts, searchTerm]);
+  
 
   const handleCardClick = (contact) => {
     setSelectedContact(contact);
@@ -80,7 +82,8 @@ const ContactHome = () => {
   };
 
   const clearFilters = () => {
-    setClearFiltersFlag(!clearFiltersFlag);
+    setFilter({ filterType: '', filterValue: '', sortOrder: 'asc' });
+    setSearchTerm('');
   };
 
   return (
@@ -89,7 +92,12 @@ const ContactHome = () => {
       <FilterBar onFilter={handleFilterChange} onClearFiltersClick={clearFilters} />
       <div className="contact-list">
         {filteredContacts.map(contact => (
-          <Card key={contact.id} contact={contact} onClick={() => handleCardClick(contact)} />
+          <Card
+            key={contact.id}
+            contact={contact}
+            onClick={() => handleCardClick(contact)}
+            isSelected={selectedContact && selectedContact.id === contact.id}
+          />
         ))}
       </div>
       {isModalOpen && <ContactDetailsModal contact={selectedContact} onClose={handleCloseModal} />}

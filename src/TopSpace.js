@@ -20,7 +20,7 @@ const TopSpace = () => {
     <div className="top-space">
       <div className="greeting">{greeting}</div>
       <div className="image-container">
-        <Link to="/me">
+        <Link to="/personalized">
           <img src={personIcon} alt="Person Icon" />
         </Link>
       </div>

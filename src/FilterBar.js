@@ -27,7 +27,7 @@ const FilterBar = ({ onFilter, onClearFiltersClick }) => {
     setFilterType('');
     setFilterValue('');
     setSortOrder('asc');
-    onClearFiltersClick(); // Notify the parent component to clear filters
+    onClearFiltersClick(); 
   };
 
   return (
